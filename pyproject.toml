@@ -1,0 +1,20 @@
+[project]
+name = "nb2pdf-agent"
+version = "1.0.0"
+description = "AI-Powered Jupyter Notebook to Professional PDF Converter"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "nbformat>=5.9.0",
+    "markdown>=3.5.0",
+    "fpdf2>=2.8.0",
+]
+
+[project.scripts]
+nb2pdf = "nb2pdf_agent:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+]
